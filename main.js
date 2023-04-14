@@ -35,7 +35,7 @@ function result(){
    
     }
   } catch (e) {
-    outputScreen.value = e;
+    outputScreen.value = e.name;
    
   }
   
