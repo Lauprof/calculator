@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculator</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+     <div class="output">
+   <input type="text" name="output" id="output"
+   readonly placeholder="0"
+   >
+   
+  </div>
+  
+<div class="buttons">
+  <button class="btn" onclick="insert('7')">7</button>
+  <button class="btn" onclick="insert('8')">8</button>
+  
+  <button class="btn" onclick="insert('9')">9</button>
+   <button class="btn del" onclick="del()">DEL</button>
+
+   <button class="btn" onclick="insert('4')">4</button>
+    <button class="btn" onclick="insert('5')">5</button>
+    <button class="btn" onclick="insert('3')">3</button>
+    <button class="btn clear"onclick="clr()">AC</button>
+    <button class="btn" onclick="insert('6')">6</button>
+        <button class="btn" onclick="insert('1')">1</button>
+    <button class="btn" onclick="insert('2')">2</button>
+
+    <button class="btn" onclick="insert('0')">0</button>
+        <button class="btn" onclick="insert('+')">+</button>
+        <button class="btn" onclick="insert('-')">-</button>
+    <button class="btn" onclick="insert('*')">x</button>
+    <button class="btn" onclick="insert('/')">÷</button>
+
+       <button class="btn" onclick="insert('.')">.</button>
+   
+   <button class="btn" onclick="insert('**')">^</button>
+      <button class="btn answ" onclick="ans()">Ans</button>
+   <button class="btn equal" onclick="result()">=</button>
+  
+</div>
+
+
+
+   
+   
+   
+ </div>
+  
+  
+  
+  
+  <div class="test">
+    
+    <h1>Divisibility test</h1>
+    <br>
+   
+    <input type="text" name="testResult" id="testResult" readonly>
+    
+    <input type="radio" name="test" id="by2" onclick="by2(answer)" value="by2"> <span>Is it Divisible by 2?</span>
+    <br><br>
+     <input type="radio" name="test" id="by4" onclick="by4(answer)" value="by4"> <span>Is it Divisible by 4?</span>
+     <br><br>
+     <input type="radio" name="test" id="by8" onclick="by8(answer)" value="by8"> <span>Is it Divisible by 8?</span>
+     <br><br>
+     <input type="radio" name="test" id="by16" onclick="by16(answer)" value="by16"> <span>Is it Divisible by 16?</span>
+    
+    <br>
+    
+  </div>
+  <!--
+  <form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+  -->
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+  padding:0px;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+@font-face {
+  font-family: myFont;
+  src: url("Itim-Regular.ttf");
+}
+
+.calculator{
+  margin:10px;
+  border:1px solid whitesmoke;
+  display: flex ;
+  flex-wrap: wrap;
+  align-content:center;
+  padding:20px;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.output{
+  flex:100%;
+  
+}
+
+input[type=text]{
+  padding:15px;
+  text-align: end;
+  outline:none;
+  border:1px solid seagreen;
+  width:100%;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-right: 8px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  font-family: myFont;
+}
+.buttons{
+  
+  display: grid;
+  grid-template-columns: 65px 60px 60px 65px;
+  grid-gap: 15px;
+  align-content:space-around;
+}
+.btn{
+  border:1px solid #f2f2f2;
+  padding: 20px;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  font-family: myFont;
+  
+  
+}
+.equal{
+  
+  background-color:black;
+ 
+}
+.del,.clear{
+  background-color: red;
+}
+.answ{
+  background-color:deeppink;
+}
+
+.test{
+  
+  margin: 10px;
+  padding: 10px;
+  font-family: myFont;
+  
+  
+}
+.test input[type=text]{
+  padding:15px;
+  text-align: end;
+  outline:none;
+  border:1px solid orangered;
+  width:100%;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-right: 8px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  font-family: myFont;
+  
+}
+.test input[type=radio]{
+  margin: 15px;
+  
+}
+.test span{
+  font-family: myFont;
+  font-size: 18px;
+}
+
+@media screen and (min-width:788px) {
+  .output{
+    display: block;
+  }
+  input[type=text]{
+    width:100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .buttons{
+    grid-template-columns: auto auto auto auto;
+  }
+  .btn{
+    font-size: 35px;
+    padding: 30px;
+  }
+  
+  .calculator{
+    
+  margin: 100px;
+  padding: 49px;
+  width:80%;
+  
+  display: block;
+   
+  }
+  .test{
+    margin:25px;
+    padding: 30px;
+  }
+  .test input[type=text]{
+    width:60%;
+    
+  }
+  input[type=radio]{
+    display:block;
+  }
+  .test span{
+    font-size: 30px;
+    display: inline-block;
+  }
+}
